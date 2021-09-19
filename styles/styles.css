@@ -59,7 +59,7 @@ body {
 
 .showcase-background::after {
     content: "";
-    background-image: url("/images/showcase.jfif");
+    background-image: url("../images/showcase.jfif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
