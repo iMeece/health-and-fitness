@@ -236,7 +236,7 @@ body {
 }
 
 /* Mobile */
-@media(max-width: 500px) {
+@media(max-width: 600px) {
     .navbar h2 {
         font-size: 1.2rem;
     }
@@ -282,6 +282,36 @@ body {
     .subscription {
         background-color: #fff;
         margin-top: 25px;
+    }
+}
+
+@media(max-width: 420px) {
+    .navbar {
+        top: 0;
+        height: 120px;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+    }
+    
+    .navbar nav {
+        margin-bottom: 25px;
+    }
+
+    .navbar a {
+        padding: 0 15px;
+    }
+
+    .showcase-content h1 {
+        font-size: 2rem;
+        padding-top: 40px;
+    }
+
+    .subscription-box .btn {
+        font-size: 1.4rem;
+        width: 220px;
+        height: 100px;
     }
 
 }
