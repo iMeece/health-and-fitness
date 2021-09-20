@@ -232,6 +232,91 @@ body {
     font-size: 0.9rem;
 }
 
+/* Contact Info */
+
+.contact-info {
+    margin: 200px 0 85px;
+}
+
+.contact-info .container {
+    width: 55%;
+}
+
+.contact-info .flex {
+    justify-content: space-between;
+}
+
+.contact-info img {
+    width: 200px;
+}
+
+.contact-info h5 {
+    line-height: 3;
+    margin-top: 25px;
+}
+
+.contact-bold {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Contact Form */
+.contact-form {
+    padding-top: 50px;
+    background-color: #fff;
+}
+
+.contact-form .flex {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-form .container {
+    width: 70%;
+}
+
+.contact-form-content {
+    width: 50%;
+}
+
+.contact-form-content h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.contact-form .btn {
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+}
+
+.contact-form input[type="email"] {
+    height: 20px;
+    padding: 20px;
+}
+
+.contact-form textarea {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
 /* Tablets and Under */
 @media(max-width: 768px) {
     .offer-section {
@@ -287,8 +372,30 @@ body {
     .price-section .offer-card p {
         padding-top: 15px;
     }
-    
 
+    .contact-info .container {
+        width: 80%;
+    }
+
+    .contact-form .container {
+        width: 80%;
+    }
+
+    .contact-form .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form-content {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form textarea {
+        width: 450px;
+        height: 150px;
+    }
+    
 }
 
 /* Mobile */
@@ -350,6 +457,24 @@ body {
     .price-section form {
         grid-column-end: span 2;
     }
+
+    .contact-info .flex {
+        flex-direction: column-reverse;
+    }
+    
+    .contact-info img {
+        width: 125%;
+        height: 200px;
+    }
+
+    .contact-form textarea {
+        width: 300px;
+        height: 140px;
+    }
+
+    .contact-info {
+        margin: 100px 0 30px;
+    }
 }
 
 @media(max-width: 420px) {
@@ -380,7 +505,11 @@ body {
         width: 220px;
         height: 100px;
     }
+}
 
-    
-
+@media(max-width: 300px) {
+    .contact-form textarea {
+        width: 210px;
+        height: 120px;
+    }
 }
