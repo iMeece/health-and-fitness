@@ -14,6 +14,8 @@ body {
     background-color: #f5f5f5;
     line-height: 1.5;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Navbar */
@@ -33,10 +35,15 @@ body {
     flex-direction: column;
 }
 
+.navbar .navbar-academy {
+    color: var(--primary-color);
+}
+
 .navbar h2 {
     font-size: 1.5rem;
     margin: 0 30px;
     line-height: 1;
+    font-weight: bold;
 }
 
 .navbar a {
@@ -173,6 +180,7 @@ body {
 .footer {
     height: 200px;
     background-color: var(--primary-color);
+    flex-shrink: 1;
 }
 
 .footer .flex {
@@ -188,6 +196,40 @@ body {
     font-size: 1.1rem;
     color: #fff2f5;
     padding-top: 5px;
+}
+
+/* Price Section */
+.price-section {
+    margin: 200px auto 25px;
+}
+
+.price-section .offer-card h3 {
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+    width: 70%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.price-section .price {
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.price-section .price-btn {
+    width: 80%;
+    height: 45px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 0.9rem;
 }
 
 /* Tablets and Under */
@@ -232,6 +274,20 @@ body {
         text-align: justify;
         margin-left: 5px;
     }
+
+    .price-section {
+        margin: 180px auto 25px;
+    }
+
+    .price-section .offer-card h3 {
+        height: 90px;
+        margin: 30px auto;
+    }
+
+    .price-section .offer-card p {
+        padding-top: 15px;
+    }
+    
 
 }
 
@@ -283,6 +339,17 @@ body {
         background-color: #fff;
         margin-top: 25px;
     }
+
+    .price-section .offer-card h3 {
+        margin-bottom: 10px;
+        width: 200px;
+        height: 100px;
+        grid-column-end: span 2;
+    }
+
+    .price-section form {
+        grid-column-end: span 2;
+    }
 }
 
 @media(max-width: 420px) {
@@ -313,5 +380,7 @@ body {
         width: 220px;
         height: 100px;
     }
+
+    
 
 }
